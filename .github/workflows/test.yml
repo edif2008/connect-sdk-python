@@ -24,7 +24,6 @@ jobs:
           pip install pytest
           poetry run pytest
       - name: Generate coverage
-      	run: |
-          poetry run coverage run -m
+      	run: poetry run coverage run -m
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
